@@ -3,8 +3,10 @@ package ufrochess;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
 
-public class MiAjedrez extends Frame implements WindowListener {
+public class MiAjedrez extends JPanel implements WindowListener {
 
     Casilla[] casi;
     Color casillaNegra;
@@ -33,9 +35,9 @@ public class MiAjedrez extends Frame implements WindowListener {
         this.setVisible(true);
         //Este objeto en su rol de FRAME (VENTANA) le asignamos un escuchador de ventana, que es el mismo en su rol de implementacion de 
         //Escuchador de ventana (WindowListener)
-        this.addWindowListener(this);
-        this.setResizable(true);
-        this.setTitle("Ajedrez");
+        //this.addWindowListener(this);
+        //this.setResizable(true);
+        //this.setTitle("Ajedrez");
 
     }
 
